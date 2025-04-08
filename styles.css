@@ -4,6 +4,7 @@
     --primary-color: #282828;
     --secondary-color: #3c3836;
     --text-color: #ebdbb2;
+    --gruvbox-green: #98971a;
 }
 
 * {
@@ -50,6 +51,7 @@ a {
 .hero-content {
     text-align: center;
     max-width: 800px;
+    width: 100%;
 }
 
 .hero h1 {
@@ -65,14 +67,37 @@ a {
     opacity: 0;
 }
 
-.cta-button {
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.start-button {
     display: inline-block;
-    padding: 1rem 2rem;
-    background-color: var(--secondary-color);
+    font-size: 2rem;
     color: var(--text-color);
-    border-radius: 5px;
     font-weight: 600;
-    border: none;
     cursor: pointer;
-    animation: fadeIn 1.5s ease 1.5s forwards;
+    transition: color 0.5s ease, transform 0.3s ease;
+    animation: fadeIn 1.5s ease forwards;
+    opacity: 0;
+    /* Removed padding, background-color, border-radius, and border properties */
+}
+
+.start-button:hover {
+    color: var(--gruvbox-green);
+    transform: scale(1.05);
+    /* Removed background-color change on hover */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
