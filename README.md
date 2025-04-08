@@ -1,3 +1,3 @@
-# checkers-project
-I can edit 
-I can also edit!
+# Checkers, But Better
+
+It's just checkers...
