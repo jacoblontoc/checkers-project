@@ -5,6 +5,7 @@
     --secondary-color: #3c3836;
     --text-color: #ebdbb2;
     --gruvbox-green: #98971a;
+    --highlight-color: #fabd2f; /* Adding a highlight color */
 }
 
 * {
@@ -100,4 +101,15 @@ a {
     100% {
         opacity: 1;
     }
+}
+
+/* Selected piece styling */
+.piece.selected {
+    transform: scale(1.15);
+    box-shadow: 0 0 8px var(--highlight-color), 0 0 12px var(--highlight-color);
+    z-index: 10;
+}
+
+.square.highlight {
+    box-shadow: inset 0 0 10px var(--highlight-color);
 }
