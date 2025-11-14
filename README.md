@@ -1,3 +1,5 @@
-# Checkers, But Better
+# Checkers: Powerup
 
-It's just checkers...
+## Powers
+
+## Events:
